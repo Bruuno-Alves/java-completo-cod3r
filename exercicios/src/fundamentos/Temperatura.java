@@ -17,6 +17,12 @@ public class Temperatura {
 		
 		System.out.println("A temperatura em graus celsius é " + celsius + "ºC."); //imprime o resultado
 		
+		System.out.print("Informe uma nova temperatura em fahrenheit: "); //solicita um novo valor ao usuario
+		fah = scan.nextDouble(); //usuario informa um novo valor
+		celsius = (fah - AJUSTE) * FATOR; //a variavel celsius é calculada novamente
+		
+		System.out.println("A nova temperatura em graus celsius é " + celsius + "ºC."); //imprime o novo resultado
+		
 	}
 
 }
