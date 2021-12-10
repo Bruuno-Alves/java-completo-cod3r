@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Temperatura {
 	
+	private static Scanner scan;
+
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in); //instancia um objeto Scanner
+		scan = new Scanner(System.in);
 		
 		System.out.print("Informe uma temperatura em fahrenheit: "); //pede para o usuário entrar com um valor
 		
