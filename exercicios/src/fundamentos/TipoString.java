@@ -22,9 +22,10 @@ public class TipoString {
 		
 		System.out.println("Nome: " + nome + "\nSobrenome: " + sobrenome +
 				"\nIdade: " + idade + "\nSalario: " + salario + "\n\n");
-		System.out.printf("Nome: %s %s\nIdade: %d anos\nSalário: R$ %.2f", nome, sobrenome, idade, salario);
+		System.out.printf("Nome: %s %s\nIdade: %d anos\nSalário: R$ %.2f \n \n", nome, sobrenome, idade, salario);
 		
 		String frase = String.format("Nome: %s %s\nIdade: %d anos\nSalário: R$ %.2f", nome, sobrenome, idade, salario);
+		System.out.println(frase);
 	}
 
 }

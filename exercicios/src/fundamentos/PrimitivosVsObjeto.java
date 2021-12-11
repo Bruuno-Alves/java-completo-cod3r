@@ -11,6 +11,7 @@ public class PrimitivosVsObjeto {
 		//objetos não possuem métodos
 		int a = 123;
 		//System.out.println(a.toString());
+		System.out.println(a);
 		
 		//Wrappers podem ser usados para atribuir métodos a tipos primitivos
 		Integer b = 123;
