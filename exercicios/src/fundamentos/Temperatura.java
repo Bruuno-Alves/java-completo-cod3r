@@ -4,11 +4,9 @@ import java.util.Scanner;
 
 public class Temperatura {
 	
-	private static Scanner scan;
-
 	public static void main(String[] args) {
 		
-		scan = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Informe uma temperatura em fahrenheit: "); //pede para o usuário entrar com um valor
 		
@@ -24,6 +22,8 @@ public class Temperatura {
 		celsius = (fah - AJUSTE) * FATOR; //a variavel celsius é calculada novamente
 		
 		System.out.println("A nova temperatura em graus celsius é " + celsius + "ºC."); //imprime o novo resultado
+		
+		scan.close();
 		
 	}
 
