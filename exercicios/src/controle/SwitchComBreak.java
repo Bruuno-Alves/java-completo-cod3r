@@ -13,7 +13,7 @@ public class SwitchComBreak {
 		
 		String conceito = "";
 		
-		switch(nota ) {
+		switch(nota) {
 		case 10:
 		case 9:
 			conceito = "A";
