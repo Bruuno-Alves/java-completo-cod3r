@@ -4,19 +4,16 @@ public class DataTeste {
 
 	public static void main(String[] args) {
 
-		Data nascimento = new Data();
-		nascimento.dia = 18;
-		nascimento.mes = 06;
-		nascimento.ano = 1990;
+		Data nascimento = new Data(18, 06, 1990);
 		
-		Data natal = new Data();
-		natal.dia = 25;
-		natal.mes = 12;
-		natal.ano = 2022;
+		Data dataPadrao = new Data();
+		dataPadrao.ano = 2021;
 				
-		System.out.printf("Eu nasci no dia %02d/%02d/%04d\n", nascimento.dia, nascimento.mes, nascimento.ano);
-		System.out.printf("O natal é dia %02d/%02d/%04d", natal.dia, natal.mes, natal.ano);
-
+		System.out.println("Eu nasci no dia " + nascimento.obterData());
+		System.out.println("A data padrão é " + dataPadrao.obterData());
+		
+		nascimento.imprimirDataFormatada();
+		
 	}
 
 }
