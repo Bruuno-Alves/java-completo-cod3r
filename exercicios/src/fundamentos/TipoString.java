@@ -14,7 +14,7 @@ public class TipoString {
 		System.out.println(s.toUpperCase().endsWith("TARDE"));
 		System.out.println(s.length());
 		System.out.println(s.equalsIgnoreCase("boa tarde"));
-		
+		s.equalsIgnoreCase(s);
 		var nome = "Bruno";
 		var sobrenome = "Alves";
 		var idade = 31;
