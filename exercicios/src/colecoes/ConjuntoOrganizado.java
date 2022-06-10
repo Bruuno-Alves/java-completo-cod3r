@@ -26,6 +26,8 @@ public class ConjuntoOrganizado {
 		nums.add(120);
 		nums.add(6);
 		
+		// nums.get(2); Não é possível acessar pelo índice
+		
 		for(int n: nums) {
 			System.out.println(n);
 		}
