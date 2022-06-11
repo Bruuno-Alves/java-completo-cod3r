@@ -26,11 +26,11 @@ public class Pilha {
 		
 		// Poll e remove -> Obtém o próximo elemento da fila e remove
 		// A diferença é o comportamento quando a fila está vazia		
-		System.out.println(livros.pop());
+		System.out.println(livros.pop()); //Quando vazia, lança uma exceção
 		System.out.println(livros.poll()); //Quando vazia. retorna null
-		System.out.println(livros.remove());  //Quando vazia, lança uma exceção
+		System.out.println(livros.remove()); //Quando vazia, lança uma exceção
 		System.out.println(livros.poll());
-		System.out.println(livros.pop());
+		// System.out.println(livros.pop());
 		
 	}
 
