@@ -8,7 +8,11 @@ public class Compra {
 	List<Item> itens = new LinkedList<>();
 	
 	double obterValorTotal() {
-		return 0;
+		double total = 0;
+		for(Item item: itens) {
+			total += item.produto.preco * item.quantidade;
+		}
+		return total;
 	}
 
 }
