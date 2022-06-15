@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Cliente {
 	
-	String nome;
-	List<Compra> compras = new LinkedList<>();
+	final String nome;
+	final List<Compra> compras = new LinkedList<>();
 	
 	Cliente(String nome) {
 		this.nome = nome;
