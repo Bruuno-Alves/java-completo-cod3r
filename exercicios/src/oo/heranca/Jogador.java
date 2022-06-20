@@ -2,21 +2,21 @@ package oo.heranca;
 
 public class Jogador {
 	
-	int vida = 100;
-	int posX;
-	int posY;
+	public int vida = 100;
+	public int posX;
+	public int posY;
 	
 	// Esse construtor chama o construtor da própria classe
-	Jogador() {
+	protected Jogador() {
 		this(0, 0);
 	}
 	
-	Jogador(int posX, int posY) {
+	protected Jogador(int posX, int posY) {
 		this.posX = posX;
 		this.posY = posY;
 	}
 	
-	boolean atacar(Jogador oponente) {
+	public boolean atacar(Jogador oponente) {
 		int deltaX = Math.abs(this.posX - oponente.posX);
 		int deltaY = Math.abs(this.posY - oponente.posY);
 		
@@ -31,7 +31,7 @@ public class Jogador {
 		}
 	}
 	
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		switch(direcao) {
 		case NORTE:
 			posY++;
