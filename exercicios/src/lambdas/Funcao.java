@@ -7,7 +7,7 @@ public class Funcao {
 	public static void main(String[] args) {
 
 		//Lambda para determinar se o valor é par ou impar
-		Function<Integer, String> parOuImpar = numero -> numero % 2 == 0 ? "Par" : "Impar";
+		Function<Integer, String> parOuImpar = num -> num % 2 == 0 ? "Par" : "Impar";
 		
 		//Lambida para concatenar o texto inicial ao resultado
 		Function<String, String> oResultadoE = valor -> "O resultado é " + valor;
