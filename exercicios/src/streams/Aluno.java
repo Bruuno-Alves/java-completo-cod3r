@@ -9,5 +9,10 @@ public class Aluno {
 		this.nome = nome;
 		this.nota = nota;
 	}
+	
+	@Override
+	public String toString() {
+		return this.nome + " tem nota " + this.nota;
+	}
 
 }
