@@ -18,11 +18,11 @@ public class Filter {
 		
 		List<Aluno> alunos = Arrays.asList(a1, a2, a3, a4, a5, a6);
 		
-		Predicate<Aluno> nota = a -> a.nota >= 7;
+		Predicate<Aluno> aprovado = a -> a.nota >= 7;
 		Function<Aluno, String> conceito = a -> "Parabéns " + a.nome + "! Você foi aprovado(a)!";
 		
 		alunos.stream()
-			.filter(nota)
+			.filter(aprovado)
 			.map(conceito)
 			.forEach(System.out::println);
 		
