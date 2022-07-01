@@ -28,9 +28,9 @@ public class MinMax {
 		};
 		
 		System.out.println(alunos.stream().max(melhorNota).get());
-		System.out.println(alunos.stream().min(piorNota).get());
+		System.out.println(alunos.stream().min(piorNota).get()); //Retorna a melhor nota
 		
-		System.out.println(alunos.stream().min(melhorNota).get());
+		System.out.println(alunos.stream().min(melhorNota).get()); //Retorna a pior nota
 		System.out.println(alunos.stream().max(piorNota).get());
 	}
 
