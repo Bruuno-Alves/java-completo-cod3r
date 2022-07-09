@@ -86,4 +86,41 @@ public class Campo {
 		return !this.isAberto();
 	}
 
+	public int getLINHA() {
+		return LINHA;
+	}
+
+	public int getCOLUNA() {
+		return COLUNA;
+	}
+	
+	public boolean objetivoAlcancado() {
+		boolean desvendado = !this.minado && this.aberto;
+		boolean protegido = this.minado && this.marcado;
+		return desvendado || protegido;
+	}
+	
+	long minasNaVizinhanca() {
+		return vizinhos.stream().filter(v -> v.minado).count();
+	}
+	
+	void reiniciar() {
+		this.aberto = false;
+		this.minado = false;
+		this.marcado = false;
+	}
+	
+	public String toString() {
+		if(this.marcado) {
+			return "x";
+		} else if(this.aberto && this.minado) {
+			return "*";
+		} else if(this.aberto && this.minasNaVizinhanca() > 0) {
+			return Long.toString(this.minasNaVizinhanca());
+		} else if(this.aberto) {
+			return " ";
+		} else {
+			return "?";
+		}
+	}
 }
