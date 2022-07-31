@@ -19,7 +19,7 @@ public class ListaUtilTeste {
 		String ultimaLinguagem2 = ListaUtil.getUltimo2(langs);
 		System.out.println(ultimaLinguagem2);
 		
-		int ultimoNumero2 = ListaUtil.getUltimo2(nums);
+		int ultimoNumero2 = ListaUtil.<Integer>getUltimo2(nums);
 		System.out.println(ultimoNumero2);
 	}
 
