@@ -11,7 +11,7 @@ public class NovaPessoa {
 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Informe um nome: ");
+		System.out.print("Informe um nome: ");
 		String nome = scan.nextLine();
 		
 		Connection conexao = FabricaConexao.getConexao();
