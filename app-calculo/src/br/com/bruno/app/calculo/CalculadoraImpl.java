@@ -1,9 +1,10 @@
 package br.com.bruno.app.calculo;
 
+import br.com.bruno.app.Calculadora;
 import br.com.bruno.app.calculo.interno.OperacoesAritimeticas;
 import br.com.bruno.logging.Logger;
 
-public class CalculadoraImpl {
+public class CalculadoraImpl implements Calculadora {
 
 	private String id = "abc";
 
